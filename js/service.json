@@ -1,0 +1,183 @@
+[
+	{
+		"sku":"APL",
+		"name":"Apple",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/apl.jpg",
+		"price":"50",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"BAN",
+		"name":"Banana",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/ban.jpg",
+		"price":"30",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"GRP",
+		"name":"Grape",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/grp.jpg",
+		"price":"100",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"LYC",
+		"name":"Lychee",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/lyc.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"PSM",
+		"name":"Pomegranate",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/psm.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"STR",
+		"name":"Strawberry",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/str.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"TNG",
+		"name":"Tangerine",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/tng.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"WML",
+		"name":"Watermelon",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/wml.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"PAP",
+		"name":"Papaya",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/pap.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"PCH",
+		"name":"Peach",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/pch.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"PER",
+		"name":"Pear",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/per.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	},
+	{
+		"sku":"PMG",
+		"name":"Pear",
+		"description":"Eat one every day to keep the doctor away!",
+		"img":"img/products/pmg.jpg",
+		"price":"200",
+		"cal":"90",
+		"nutrients" : {
+	        "Carotenoid": 0,
+	        "Vitamin C": 2,
+	        "Folates": 0,
+	        "Potassium": 1,
+	        "Fiber": 4
+	    }
+	}
+]
+

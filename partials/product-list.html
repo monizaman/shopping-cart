@@ -1,0 +1,24 @@
+<div  ng-controller="ProductListCtrl as productListCtrl">
+  <table class="table table-bordered">
+    <tr>
+      <td class="text-right" >
+        <a href="#!/cart">
+          <i class="fa fa-shopping-cart"/></i>
+          <b ng-bind="getTotalCount()"></b> items, <b ng-bind="getTotalPrice()  | currency"></b>
+        </a>
+      </td>
+    </tr>
+  </table>
+  <div class="container-boder">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="productList in productsList">
+        <div class="single-product-item text-center">
+          <img ng-src="{{productList.img}}" alt="product img">
+          <p>{{productList.price}}</p>
+          <a ng-click="addItems(productList.sku,productList.name,productList.price,1)" class="btn btn-primary">add to cart</a>
+          <a ng-click="viewDetails(productList.sku)" class="btn btn-primary">view details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

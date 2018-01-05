@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cartApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title> AngularJS Shopping Cart Application </title>
+
+	<script src="js/libs/angular.min.js"></script>
+	<script src="js/libs/angular-route.min.js"></script>
+	<script src="js/libs/angular-resource.min.js"></script>
+	<script src="js/libs/angular-cookies.min.js"></script>
+	
+	
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/services.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="card card-body bg-light text-center" >
+                    <a href="index.html">
+                    </a>
+                    AngularJS Shopping Cart Application 
+                </h1>
+
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

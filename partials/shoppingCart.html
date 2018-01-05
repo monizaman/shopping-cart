@@ -1,0 +1,65 @@
+<p class="text-info">
+    Thanks for shopping at the Angular Store.<br />
+    This is your shopping cart. Here you can edit the items, 
+    go back to the store, clear the cart, or check out.
+</p>
+<div class="row">
+    <div class="col-md-8">
+        <!-- items -->
+        <table class="table table-bordered">
+            <!-- header -->
+            <tr class="well">
+                <td><b>Item</b></td>
+                <td class="tdCenter"><b>Quantity</b></td>
+                <td class="tdRight"><b>Price</b></td>
+                <td class="tdRight"><b>Remove</b></td>
+            </tr>
+            <!-- cart items -->
+            <tr ng-repeat="item in items | orderBy:'name'">
+                <td>{{item.name}}</td>
+                <td class="tdCenter">
+                    <div class="input-append">
+                        <!-- use type=tel instead of  to prevent spinners -->
+                        <input
+                        class="span3 text-center" type="tel" 
+                        ng-model="item.quantity" 
+                        />
+                        <button 
+                        class="btn btn-success" type="button" 
+                        ng-disabled="item.quantity >= 1000"
+                        ng-click="addItems(item.sku, item.name, item.price, 1)">+</button>
+                        <button 
+                        class="btn btn-inverse" type="button" 
+                        ng-disabled="item.quantity <= 1"
+                        ng-click="addItems(item.sku, item.name, item.price, -1)">-</button>
+                    </div>
+                </td>
+                <td class="tdRight">{{item.price * item.quantity | currency}}</td>
+                <td class="tdCenter">
+                    <a href="" ng-click="addItems(item.sku, item.name, item.price, -10000000)"><i class="fa fa-times"></i></a>
+                </td>
+            </tr>
+            <!-- footer -->
+            <tr class="well">
+                <td><b>Total</b></td>
+                <td class="tdCenter"><b ng-bind="getTotalCount()"></b></td>
+                <td class="tdRight"><b ng-bind="getTotalPrice() | currency"></b></td>
+                <td />
+            </tr>
+        </table>
+    </div>
+<!-- buttons -->
+    <div class="col-md-4">
+        <p class="text-info">
+            <button class="btn btn-block" onclick="window.location.href='#!/product-list'">
+                <i class="fa fa-chevron-left"></i>
+                back to store
+            </button>
+            <button class="btn btn-block btn-danger" ng-click="clearItems()" >
+                <i class="fa fa-trash"></i>
+                clear cart
+            </button>
+        </p>
+    </div>
+</div>
+

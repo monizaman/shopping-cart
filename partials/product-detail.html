@@ -1,0 +1,61 @@
+<div  ng-repeat="product in product">
+    <div class="row">
+       <p class="text-info">
+          <img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}"/>
+          {{product.name}}: {{product.description}}<br />
+      </p>
+        <div class="col-md-8">
+        <!-- product info -->
+            <table class="table table-bordered">
+
+                <tr>
+                    <td class="text-right" colspan="3" >
+                        <a href="#!/cart">
+                            <i class="fa fa-shopping-cart"/></i>
+                            <b ng-bind="getTotalCount()"></b> items, <b ng-bind="getTotalPrice()  | currency"></b>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right"><b>Calories</b></td>
+                    <td class="text-center"><h2>{{product.cal}}</h2></td>
+                    <td />
+                </tr>
+                <tr ng-repeat="(nutrientName, nutrientValue) in product.nutrients">
+                    <td class="text-right"><b>{{nutrientName}}</b></td>
+                    <td class="text-center"><img ng-src="img/r{{nutrientValue}}.png" alt="{{nutrientValue}}" /></td>
+                    <td>
+                        <b>{{dvaCaption[nutrientValue]}}</b>:
+                        {{dvaRange[nutrientValue]}}
+                        of the recommended daily value.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text-right" colspan="3" >
+                        <a href="#!/cart">
+                            <i class="fa fa-shopping-cart"/></i>
+                            <b ng-bind="getTotalCount()"></b> items, <b ng-bind="getTotalPrice()  | currency"></b>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- buttons -->
+        <div class="col-md-4">
+                <button 
+                class="btn btn-block btn-success" 
+                ng-click="addItems(product.sku,product.name,product.price,1)">
+                <i class="icon-shopping-cart icon-white"></i> Add Cart
+            </button>
+            <button 
+            class="btn btn-block" 
+            onclick="window.location.href='#!/product-list'">
+            <i class="fa fa-chevron-left"></i> Back to Store
+            </button>
+        </div>
+    </div>
+</div>
+
