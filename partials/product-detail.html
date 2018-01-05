@@ -1,7 +1,7 @@
 <div  ng-repeat="product in product">
     <div class="row">
        <p class="text-info">
-          <img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.name}}"/>
+           <img ng-src="{{product.img}}" alt="{{product.name}}"/>
           {{product.name}}: {{product.description}}<br />
       </p>
         <div class="col-md-8">
